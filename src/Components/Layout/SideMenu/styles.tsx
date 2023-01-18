@@ -5,7 +5,7 @@ export const Container = styled.div`
     top: 0;
     width: 15%;
     height: 100%;
-    min-height: 250px;
+    min-height: 500px;
     min-width: 200px;
     display: flex;
     justify-content: space-between;
@@ -32,14 +32,15 @@ export const ContainerLogo = styled.div`
 
 export const BoxLogo = styled.div`
 
-    width: 40%;
-    height: 65px;
+    width: 35%;
+    height: 35%;
+    min-height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: ${props => props.theme.colors.backgroundContrast};
     border-radius: 25px;
-    margin-bottom: 8%;
+    margin-bottom: 14%;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
     -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
@@ -72,16 +73,30 @@ export const AnimationWrapper = styled.div`
 `;
 
 export const BoxTitle = styled.div`
-    width: 60%;
+    width: 80%;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${props => props.theme.colors.primary};
     border-radius: 8px;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
     -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+	background: linear-gradient(-90deg, ${props => props.theme.colors.primary}, ${props => props.theme.colors.secondary}, ${props => props.theme.colors.primary});
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+    @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 `;
 
 export const Title = styled.h1`

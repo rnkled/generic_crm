@@ -31,6 +31,7 @@ export const ContainerContent = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 `;
 export const LeftSpacer = styled.div`
     width: 17.8%;

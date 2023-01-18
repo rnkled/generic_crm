@@ -9,7 +9,8 @@ interface Props {
 
 
 export const Container = styled(Link)<Props>`
-    height: 40px;
+    min-height: 40px;
+    height: 10%;
     width: ${({active}) => active == 'true' ? 'calc(100% - 8px)' : '100%'};
     padding: 0 5;
     display: flex;
