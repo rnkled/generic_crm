@@ -1,6 +1,6 @@
 export default interface ProjectInterface {
     id: number,
-    name: string,
+    title: string,
     description: string,
     tasks: string[],
     members: string[],

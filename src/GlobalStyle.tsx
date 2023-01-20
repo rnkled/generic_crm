@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    box-sizing: border-box;
   }
     /* ::-webkit-scrollbar {
       height: 0px;
@@ -47,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     /* overflow-y: hidden; */
     overflow-x: hidden; 
+    box-sizing: border-box;
 
   }
 

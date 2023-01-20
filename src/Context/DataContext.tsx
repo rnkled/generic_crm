@@ -7,7 +7,7 @@ import ProjectInterface from "../Interfaces/ProjectInterface";
 
 
 
-const DataContext = createContext({} as DataInterface);
+export const DataContext = createContext({} as DataInterface);
 
 const DataContextProvider = (props: any) => {
     const [persons, setPersons] = useState<PersonInterface[]>([
@@ -39,11 +39,11 @@ const DataContextProvider = (props: any) => {
     const [blocks, setBlocks] = useState<BlockInterface[]>([
         {
             id: 1,
-            name: "Block 1",
+            title: "Block 1",
             projects: [
                 {
                     id: 1,
-                    name: "Project 1",
+                    title: "Project 1",
                     description: "Project 1 description",
                     tasks: [],
                     members: ['1', '2'],
@@ -53,7 +53,7 @@ const DataContextProvider = (props: any) => {
                 } as ProjectInterface,
                 {
                     id: 2,
-                    name: "Project 2",
+                    title: "Project 2",
                     description: "Project 2 description",
                     tasks: [],
                     members: ['3', '4'],
@@ -65,11 +65,11 @@ const DataContextProvider = (props: any) => {
         },
         {
             id: 2,
-            name: "Block 2",
+            title: "Block 2",
             projects: [
                 {
                     id: 3,
-                    name: "Project 3",
+                    title: "Project 3",
                     description: "Project 3 description",
                     tasks: [],
                     members: ['1', '2'],
@@ -79,7 +79,7 @@ const DataContextProvider = (props: any) => {
                 } as ProjectInterface,
                 {
                     id: 4,
-                    name: "Project 4",
+                    title: "Project 4",
                     description: "Project 4 description",
                     tasks: [],
                     members: ['3', '4'],
@@ -91,11 +91,11 @@ const DataContextProvider = (props: any) => {
         },
         {
             id: 3,
-            name: "Block 3",
+            title: "Block 3",
             projects: [
                 {
                     id: 5,
-                    name: "Project 5",
+                    title: "Project 5",
                     description: "Project 5 description",
                     tasks: [],
                     members: ['1', '2'],
@@ -105,7 +105,7 @@ const DataContextProvider = (props: any) => {
                 } as ProjectInterface,
                 {
                     id: 6,
-                    name: "Project 6",
+                    title: "Project 6",
                     description: "Project 6 description",
                     tasks: [],
                     members: ['3', '4'],
@@ -117,11 +117,11 @@ const DataContextProvider = (props: any) => {
         },
         {
             id: 4,
-            name: "Block 4",
+            title: "Block 4",
             projects: [
                 {
                     id: 7,
-                    name: "Project 7",
+                    title: "Project 7",
                     description: "Project 7 description",
                     tasks: [],
                     members: ['1', '2'],
@@ -131,7 +131,7 @@ const DataContextProvider = (props: any) => {
                 } as ProjectInterface,
                 {
                     id: 8,
-                    name: "Project 8",
+                    title: "Project 8",
                     description: "Project 8 description",
                     tasks: [],
                     members: ['3', '4'],

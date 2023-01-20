@@ -1,6 +1,6 @@
 export default interface TaskInterface {
     id: number,
-    name: string,
+    title: string,
     description: string,
     members: string[],
     projectId: string,

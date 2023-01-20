@@ -27,7 +27,7 @@ const SideMenu: React.FC = () => {
       </BoxTitle>
     </ContainerLogo>
     <ContainerMenu>
-      <SideMenuItem title="Dashboard" setLocation={setCurrentLocation} selected={selected} icon={<MdOutlineSpaceDashboard size={25} color={'inherit'}/>}/>
+      <SideMenuItem title="Tasksboard" setLocation={setCurrentLocation} selected={selected} icon={<MdOutlineSpaceDashboard size={25} color={'inherit'}/>}/>
       <SideMenuItem title="People" setLocation={setCurrentLocation} selected={selected} icon={<SlPeople size={25} color={'inherit'}/>}/>
       <SideMenuItem title="Finances" setLocation={setCurrentLocation} selected={selected} icon={<GiReceiveMoney size={25} color={'inherit'}/>}/>
     </ContainerMenu>
